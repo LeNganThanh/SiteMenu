@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+:root {
+  font-size: 62.5%;
+  --lila-blue-color: #5366c3;
+  --dark-blue-color: #3f83c0;
+  --blue-color: #2aa1bd;
+  --sky-blue-color: #15bfbb;
+  --hover-text-color: #ffffff;
+  --bg-color: #dbe1e2;
+  --box-shadow-color: rgb(151, 148, 148);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 2rem;
+  font-family: "Lobster Two", cursive;
+  font-weight: 700;
+  font-style: italic;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  width: 50rem;
+  height: 30rem;
+  margin: 10rem auto;
+  border: none;
+  box-shadow: 15px 15px 35px var(--box-shadow-color);
+  overflow: hidden;
+}
+.tab {
+  display: flex;
+  align-items: center;
+  height: 25%;
+  position: relative;
+}
+.tab .text{
+    position: absolute;
+    padding-left: 3rem;
+    z-index: 99;
+}
+
+.tab-move {
+  width: 100rem;
+  height: 100%;
+  transform: translateX(-49rem);
+  z-index: 1;
+}
+.home .tab-move {
+  background-color: var(--lila-blue-color);
+}
+.about .tab-move {
+  background-color: var(--dark-blue-color);
+}
+.work .tab-move {
+  background-color: var(--blue-color);
+}
+.contact .tab-move {
+  background-color: var(--sky-blue-color);
+}
+.tab:hover{
+    color: var(--hover-text-color);
+}
+.tab:hover .tab-move{
+    transform: translateX(0rem);
+    transition: transform 2s ease;
+}
