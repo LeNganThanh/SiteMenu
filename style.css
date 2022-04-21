@@ -41,14 +41,12 @@ body {
 .tab .text{
     position: absolute;
     padding-left: 3rem;
-    z-index: 99;
 }
 
 .tab-move {
   width: 100rem;
   height: 100%;
   transform: translateX(-49rem);
-  z-index: 1;
 }
 .home .tab-move {
   background-color: var(--lila-blue-color);
@@ -67,5 +65,5 @@ body {
 }
 .tab:hover .tab-move{
     transform: translateX(0rem);
-    transition: transform 2s ease;
+    transition: transform 1s ease;
 }
