@@ -65,5 +65,5 @@ body {
   color: var(--hover-text-color);
 }
 .tab:hover::before {
-  width: 50rem;
+  width: 100%;
 }
